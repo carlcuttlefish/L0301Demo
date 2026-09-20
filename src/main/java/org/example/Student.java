@@ -1,6 +1,9 @@
 package org.example;
 
 public class Student extends Person implements Comparable<Student> {
+  // DON'T repeat variables in inheritance, causes null values of parent class
+  // attributes are not overridden in inheritance like python, which is referenced depends on
+  // the type of the var we are using to get to the attribute
 
   private String studentNumber = "Not Assigned";
 
